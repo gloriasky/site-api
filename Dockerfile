@@ -6,3 +6,5 @@ RUN pip install cloudpickle
 RUN mkdir /app
 WORKDIR /app/
 COPY . /app/
+
+CMD python3 -u api.py --profile prod
